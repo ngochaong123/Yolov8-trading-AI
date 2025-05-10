@@ -1,3 +1,4 @@
+
 # Trading AL Image Recognition with YOLOv8 and Oriented Bounding Boxes  
 
 This project leverages YOLOv8 for image recognition in trading applications, utilizing oriented bounding boxes (OBB) for precise object detection in video data. The training process is powered by Roboflow, optimized for NVIDIA GPU acceleration with CUDA and Python 3.10.0.  
@@ -6,6 +7,11 @@ This project leverages YOLOv8 for image recognition in trading applications, uti
 - **YOLOv8 with Oriented Bounding Boxes**: Advanced object detection for video-based image recognition.  
 - **Roboflow Integration**: Streamlined dataset management and training pipeline.  
 - **GPU Acceleration**: Harnesses NVIDIA CUDA for faster training and inference.  
+
+## Video Demonstration  
+Watch the video illustrating the actual implementation of the project:  
+
+[![Watch the video](https://img.youtube.com/vi/djSFUutVCRk/maxresdefault.jpg)](https://youtu.be/djSFUutVCRk)  
 
 ## Webcam Setup  
 This project uses the Hikvision DS-U02 Full HD (1920×1080) webcam for video input. Ensure the webcam is properly connected and recognized by your system.  
@@ -49,10 +55,3 @@ Once the dataset is downloaded, train the YOLOv8 model using the provided datase
 yolo task=detect mode=train data=dataset.yaml model=yolov8n.pt epochs=50 imgsz=640  
 ```  
 
-## Video Demonstration  
-For a detailed demonstration of the project, watch the video below:  
-
-[![Watch the video](https://img.youtube.com/vi/djSFUutVCRk/maxresdefault.jpg)](https://youtu.be/djSFUutVCRk)  
-
-## Contact  
-Feel free to reach out for further details or collaboration opportunities.  
