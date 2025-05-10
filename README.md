@@ -1,24 +1,24 @@
-# Training an AI Model to Recognize Objects in Videos Using YOLOv8 with Oriented Bounding Boxes
+# Training an AI Model to Recognize Objects in Videos Using YOLOv8 Oriented Bounding Boxes
 
-This project utilizes YOLOv8 for image recognition in trading environments, leveraging Oriented Bounding Boxes (OBB) for precise object detection in video streams. The training pipeline is powered by Roboflow and optimized for NVIDIA GPU acceleration using CUDA and Python 3.10.0.
+This project demonstrates how to use YOLOv8 with Oriented Bounding Boxes (OBB) for precise object detection in video streams, specifically tailored for trading environments. The training process is powered by Roboflow and optimized for NVIDIA GPUs with CUDA support, using Python 3.10.0.
 
-## Features
+## Key Features
 
-- **YOLOv8 with Oriented Bounding Boxes**: Advanced object detection tailored for video-based applications in trading.
-- **Roboflow Integration**: Simplifies dataset management, versioning, and training workflow.
-- **GPU Acceleration**: Utilizes NVIDIA CUDA for high-speed training and real-time inference.
+- **YOLOv8 with Oriented Bounding Boxes**: Enhanced object detection for video-based applications.
+- **Roboflow Integration**: Simplifies dataset management and training workflows.
+- **GPU Acceleration**: Leverages NVIDIA CUDA for faster training and inference.
 
 ## Video Demonstration
 
-Click the image below to watch a demonstration of the full implementation:
+Watch the implementation in action by clicking the video below:
 
 [![Watch the video](https://img.youtube.com/vi/djSFUutVCRk/maxresdefault.jpg)](https://youtu.be/djSFUutVCRk)
 
-## Webcam Setup
+## Webcam Requirements
 
-The project uses the Hikvision DS-U02 Full HD (1920×1080) webcam for real-time video input. Ensure the device is properly connected and recognized by your system before starting.
+The project uses the Hikvision DS-U02 Full HD (1920×1080) webcam for real-time video input. Ensure the webcam is connected and recognized by your system.
 
-## Setup Guide
+## Setup Instructions
 
 ### Prerequisites
 
@@ -27,13 +27,13 @@ The project uses the Hikvision DS-U02 Full HD (1920×1080) webcam for real-time 
 
 ### Installation Steps
 
-1. Clone the repository and navigate to the directory:
+1. Clone the repository and navigate to the project directory:
     ```bash
     git clone <repository_url>
     cd <repository_name>
     ```
 
-2. Install required Python packages:
+2. Install the required Python packages:
     ```bash
     pip install ultralytics roboflow
     ```
@@ -46,7 +46,7 @@ The project uses the Hikvision DS-U02 Full HD (1920×1080) webcam for real-time 
 
 ## Dataset Preparation
 
-The dataset is hosted and managed through Roboflow. Use the script below to download the dataset:
+The dataset is hosted on Roboflow. Use the following script to download it:
 
 ```python
 from roboflow import Roboflow
@@ -57,8 +57,10 @@ version = project.version(3)
 dataset = version.download("yolov8-obb")
 ```
 
-### Training  
-Once the dataset is downloaded, train the YOLOv8 model using the provided dataset:  
-```bash  
-yolo task=detect mode=train data=dataset.yaml model=yolov8n.pt epochs=50 imgsz=640  
+## Training the Model
+
+After downloading the dataset, train the YOLOv8 model with the following command:
+
+```bash
+yolo task=detect mode=train data=dataset.yaml model=yolov8n.pt epochs=50 imgsz=640
 ```  
