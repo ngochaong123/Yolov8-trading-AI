@@ -1,4 +1,4 @@
-# Trading AI Image Recognition with YOLOv8 and Oriented Bounding Boxes
+# Training an AI Model to Recognize Objects in Videos Using YOLOv8 with Oriented Bounding Boxes
 
 This project utilizes YOLOv8 for image recognition in trading environments, leveraging Oriented Bounding Boxes (OBB) for precise object detection in video streams. The training pipeline is powered by Roboflow and optimized for NVIDIA GPU acceleration using CUDA and Python 3.10.0.
 
