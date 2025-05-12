@@ -29,8 +29,8 @@ The project uses the Hikvision DS-U02 Full HD (1920×1080) webcam for real-time 
 
 1. Clone the repository and navigate to the project directory:
     ```bash
-    git clone <repository_url>
-    cd <repository_name>
+    git clone https://github.com/ngochaong123/Yolov8-trading-AI.git
+    cd Yolov8-trading-AI
     ```
 
 2. Install the required Python packages:
